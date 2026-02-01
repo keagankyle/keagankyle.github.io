@@ -152,3 +152,21 @@ figcaption {
 .post-list li:hover a {
     color: #8c7851 !important;
 }
+/* Update your existing img rule */
+img {
+    display: block;
+    margin: 20px auto;   /* Keeps images centered */
+    width: 100%;         /* Forces images to fill their container width-wise */
+    max-width: 600px;    /* Sets a standard maximum width for all images */
+    height: 400px;       /* Sets a fixed height to ensure uniformity */
+    object-fit: cover;   /* Crops the image to fill the 600x400 area without stretching */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border: 1px solid #d1ccc0;
+}
+
+/* Ensure the specific Harvey AI div doesn't override these styles */
+.post-image {
+    text-align: center;
+    width: 100%;
+}
