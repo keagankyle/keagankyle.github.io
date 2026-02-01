@@ -1,8 +1,13 @@
-/* Importing professional Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 1. THE GLOBAL RESET */
+/* This '*' selector targets every single element on the page */
+* {
+    font-family: 'Playfair Display', serif !important;
+}
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.8;
     max-width: 850px;
     margin: 0 auto;
@@ -12,7 +17,7 @@ body {
     /* Subtle Paper Texture Pattern */
     background-color: #f4f1ee;
     background-image: radial-gradient(#d1ccc0 0.5px, transparent 0.5px);
-    background-size: 20px 20px; /* Creates a very faint, professional grid/grain */
+    background-size: 20px 20px;
 }
 
 header {
@@ -23,62 +28,47 @@ header {
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 2.8em;
+    font-weight: 700;
     margin-bottom: 10px;
     color: #1a1a1a;
 }
 
 header .tagline {
     color: #7a736a;
-    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.2em;
-    letter-spacing: 0.5px;
-}
-
-nav {
-    margin-top: 20px;
 }
 
 nav a {
-    color: #8c7851; /* Muted Gold/Brass */
+    color: #8c7851;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85em;
+    font-size: 0.9em;
     letter-spacing: 1.5px;
     margin: 0 15px;
-    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #1a1a1a;
-}
-
+/* 2. POST STYLING */
 .post-list {
     list-style: none;
     padding: 0;
 }
 
 .post-list li {
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white card */
+    background: rgba(255, 255, 255, 0.5);
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 8px;
     border: 1px solid rgba(209, 204, 192, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.post-list li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    background: #ffffff;
+    /* This ensures any text inside the LI also matches */
+    color: #33302e; 
 }
 
 .post-list a {
-    font-family: 'Playfair Display', serif;
     font-size: 1.6em;
+    font-weight: 700;
     color: #1a1a1a;
     text-decoration: none;
     display: block;
@@ -86,11 +76,16 @@ nav a:hover {
 }
 
 .post-list .date {
-    font-size: 0.85em;
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #a39c94;
-    font-weight: 600;
+}
+
+/* 3. ENSURING POST CONTENT IS UNIFORM */
+/* This targets paragraphs or general text inside your posts */
+p, li, div, span {
+    font-family: 'Playfair Display', serif;
 }
 
 footer {
@@ -98,27 +93,6 @@ footer {
     margin-top: 80px;
     padding-top: 40px;
     border-top: 1px solid #d1ccc0;
-    font-size: 0.85em;
-    color: #7a736a;
-    letter-spacing: 0.5px;
-}
-
-/* Newsletter Image Styling */
-figure {
-    margin: 40px 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    filter: sepia(10%) contrast(105%); /* Gives images a slightly warmer, editorial feel */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-}
-
-figcaption {
-    margin-top: 15px;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+    font-size: 0.9em;
     color: #7a736a;
 }
