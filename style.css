@@ -1,74 +1,100 @@
 body {
-    font-family: Georgia, serif;
-    line-height: 1.7;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fafafa;
-    color: #333;
+    padding: 40px 20px;
+    /* Soft cream/parchment background */
+    background-color: #fdfaf5; 
+    /* Deep charcoal with a hint of brown */
+    color: #3e3a36; 
 }
 
 header {
-    border-bottom: 2px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    /* Deep Forest Green for a professional anchor */
+    border-bottom: 3px solid #2d4739; 
+    padding-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 header .tagline {
-    color: #666;
+    /* Muted earthy green */
+    color: #5b6d5b; 
     font-style: italic;
+    font-size: 1.1em;
 }
 
 nav a {
-    color: #0066cc;
+    /* Terracotta for a pop of warmth */
+    color: #a65d37; 
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2d4739;
+    text-decoration: underline;
 }
 
 .post-list {
     list-style: none;
+    padding: 0;
 }
 
 .post-list li {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    /* Subtle warm gray-brown border */
+    border-bottom: 1px solid #e0d7cd; 
 }
 
 .post-list a {
-    font-size: 1.3em;
-    color: #333;
+    font-size: 1.4em;
+    /* Deep green for headlines */
+    color: #2d4739; 
     text-decoration: none;
+    font-weight: bold;
+}
+
+.post-list a:hover {
+    color: #a65d37;
 }
 
 .post-list .date {
     display: block;
-    margin-top: 5px;
-    color: #666;
+    margin-top: 8px;
+    color: #8c7e6d; 
     font-style: italic;
+    font-size: 0.95em;
 }
 
 footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 2px solid #2d4739;
     font-size: 0.9em;
+    color: #5b6d5b;
 }
+
 /* Newsletter Image Styling */
 figure {
-    margin: 30px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    /* Softening the image border to a warm tone */
+    border: 1px solid #d6cdc1;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 figcaption {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 0.9em;
-    color: #666;
+    color: #8c7e6d;
     font-style: italic;
 }
