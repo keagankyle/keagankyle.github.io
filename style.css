@@ -1,40 +1,59 @@
+/* Importing professional Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.8;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 40px 20px;
-    /* Soft cream/parchment background */
-    background-color: #fdfaf5; 
-    /* Deep charcoal with a hint of brown */
-    color: #3e3a36; 
+    padding: 60px 20px;
+    color: #33302e;
+    
+    /* Subtle Paper Texture Pattern */
+    background-color: #f4f1ee;
+    background-image: radial-gradient(#d1ccc0 0.5px, transparent 0.5px);
+    background-size: 20px 20px; /* Creates a very faint, professional grid/grain */
 }
 
 header {
-    /* Deep Forest Green for a professional anchor */
-    border-bottom: 3px solid #2d4739; 
-    padding-bottom: 24px;
-    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid #d1ccc0;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
 }
 
 header .tagline {
-    /* Muted earthy green */
-    color: #5b6d5b; 
+    color: #7a736a;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav a {
-    /* Terracotta for a pop of warmth */
-    color: #a65d37; 
+    color: #8c7851; /* Muted Gold/Brass */
     text-decoration: none;
     font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1.5px;
+    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #2d4739;
-    text-decoration: underline;
+    color: #1a1a1a;
 }
 
 .post-list {
@@ -43,58 +62,63 @@ nav a:hover {
 }
 
 .post-list li {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white card */
+    padding: 30px;
     margin-bottom: 30px;
-    padding-bottom: 25px;
-    /* Subtle warm gray-brown border */
-    border-bottom: 1px solid #e0d7cd; 
+    border-radius: 8px;
+    border: 1px solid rgba(209, 204, 192, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    background: #ffffff;
 }
 
 .post-list a {
-    font-size: 1.4em;
-    /* Deep green for headlines */
-    color: #2d4739; 
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #1a1a1a;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.post-list a:hover {
-    color: #a65d37;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .post-list .date {
-    display: block;
-    margin-top: 8px;
-    color: #8c7e6d; 
-    font-style: italic;
-    font-size: 0.95em;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a39c94;
+    font-weight: 600;
 }
 
 footer {
-    margin-top: 60px;
-    padding-top: 25px;
-    border-top: 2px solid #2d4739;
-    font-size: 0.9em;
-    color: #5b6d5b;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #d1ccc0;
+    font-size: 0.85em;
+    color: #7a736a;
+    letter-spacing: 0.5px;
 }
 
 /* Newsletter Image Styling */
 figure {
     margin: 40px 0;
-    text-align: center;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    /* Softening the image border to a warm tone */
-    border: 1px solid #d6cdc1;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    filter: sepia(10%) contrast(105%); /* Gives images a slightly warmer, editorial feel */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 figcaption {
-    margin-top: 12px;
-    font-size: 0.9em;
-    color: #8c7e6d;
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
+    color: #7a736a;
 }
