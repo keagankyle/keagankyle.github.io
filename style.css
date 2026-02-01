@@ -96,3 +96,59 @@ footer {
     font-size: 0.9em;
     color: #7a736a;
 }
+/* 1. CENTERING AND RESIZING IMAGES */
+img {
+    display: block;      /* Allows for centering with margin auto */
+    margin: 20px auto;   /* Centers horizontally and adds space top/bottom */
+    max-width: 80%;      /* Makes the image slightly smaller (adjustable) */
+    height: auto;        /* Maintains the correct aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Soft professional shadow */
+    border: 1px solid #d1ccc0;
+}
+
+/* 2. MAKING POST HEADINGS LARGER */
+/* This targets standard headings (h2, h3) inside your posts */
+.post-list h2, .post-list h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+.post-list h2 {
+    font-size: 2.2em; /* Significantly larger main headings */
+    border-bottom: 1px solid rgba(140, 120, 81, 0.3); /* Subtle accent line */
+    padding-bottom: 10px;
+}
+
+.post-list h3 {
+    font-size: 1.8em; /* Slightly smaller sub-headings */
+}
+
+/* 3. ENSURING FIGURE CAPTIONS STAY CENTERED */
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #7a736a;
+    font-style: italic;
+}
+/* RE-ENABLING THE HOVER EFFECT */
+.post-list li {
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+.post-list li:hover {
+    transform: translateY(-8px) !important; /* Lifts the card up */
+    background-color: #ffffff !important;   /* Makes it pop against the pattern */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important; /* Adds depth */
+    border-color: #8c7851 !important;       /* Changes border to that gold/brass color */
+}
+
+/* Ensure the link inside the post also reacts */
+.post-list li:hover a {
+    color: #8c7851 !important;
+}
